@@ -53,7 +53,7 @@ int RingBuffer::CurrentSize(){
     }
     else
     {
-        return (BufferIdx);
+        return (BufferIdx); // points to the next available idx so does return correct size
     }
 }
 

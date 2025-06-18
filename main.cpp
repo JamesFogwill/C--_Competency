@@ -4,10 +4,10 @@
 
 using namespace std;
 
-double MaxAlt = 1000;
-int BufSize = 10;
+double MaxAltitude = 1000;
+int BufferSize = 10;
 
-FilterSubmarineAltimeter AltimeterFilterClassInst(MaxAlt, BufSize);
+FilterSubmarineAltimeter AltimeterFilterClassInst(MaxAltitude, BufferSize); // create altimeter object
 
 int main() {
 
@@ -30,7 +30,7 @@ int main() {
     Avergae = AltimeterFilterClassInst.GetAverage();
     AltimeterFilterClassInst.PrintReadings();
 
-    AltimeterFilterClassInst.LogBuffer();
+    AltimeterFilterClassInst.LogBuffer(); // empties buffer into csv file 
 
     AltimeterFilterClassInst.AddReading(1);
     AltimeterFilterClassInst.AddReading(22);

@@ -32,7 +32,3 @@ SMA is also sensitive to outliers, especially when using a smaller SMA history t
 Implementation makes use of OOP and defensive coding with good unit testing of individual functions
 with differing test cases.
 Buffer has its own class and it configurable in size.
-
-
-csv make sexy
-
